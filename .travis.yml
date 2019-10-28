@@ -1,3 +1,5 @@
-language node_js
-node_js:
-  - "node"
+language: node_js
+
+script:
+- cd ez-cal
+- npm run build
