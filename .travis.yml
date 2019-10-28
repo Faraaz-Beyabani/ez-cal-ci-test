@@ -4,5 +4,4 @@ node_js:
 before_install:
   - cd ez-cal
 after-success:
-  - npm install
   - npm run build
