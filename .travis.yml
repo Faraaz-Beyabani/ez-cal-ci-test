@@ -1,5 +1,8 @@
 language: node_js
-
+node_js:
+  - "node"
+before_install:
+  - cd ez-cal
 script:
-- cd ez-cal
-- npm run build
+  - npm install
+  - npm run build
