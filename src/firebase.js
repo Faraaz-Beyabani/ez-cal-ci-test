@@ -3,17 +3,17 @@ import 'firebase/auth';
 import 'firebase/database';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDZzj4QwsGSpJmXRiVjuqgAq-5YB9EoxrE",
-  authDomain: "ezcal-2394a.firebaseapp.com",
-  databaseURL: "https://ezcal-2394a.firebaseio.com",
-  projectId: "ezcal-2394a",
-  storageBucket: "ezcal-2394a.appspot.com",
-  messagingSenderId: "1029216905931",
-  appId: "1:1029216905931:web:33ccd473548edd99ecc94e"
+  apiKey: "AIzaSyDmbHVABhP0Wni4OdZhRilLk3PzmYQkZQc",
+  authDomain: "travis-ez-cal.firebaseapp.com",
+  databaseURL: "https://travis-ez-cal.firebaseio.com",
+  projectId: "travis-ez-cal",
+  storageBucket: "travis-ez-cal.appspot.com",
+  messagingSenderId: "321419832652",
+  appId: "1:321419832652:web:6181128df7e115545a73e9",
+  measurementId: "G-53N53FFWB6"
 };
 
 firebase.initializeApp(firebaseConfig);
-
 
 const uiConfig = {
   signInFlow: 'popup',

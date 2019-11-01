@@ -23,7 +23,7 @@ export default class App extends Component {
       dateList.push(date.getDate() + i);
     }
 
-    return [null, dateList];
+    return [dayList, dateList];
   };
 
   dayGrid = () => {
