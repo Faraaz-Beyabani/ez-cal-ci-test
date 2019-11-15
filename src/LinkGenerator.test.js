@@ -13,7 +13,7 @@ it('successful render', () => {
 
 it('link clickable', () => {
     const div = document.createElement('div');
-    const {getByText, getByTestId} = render(<LinkGenerator link="dummy.com" />);
+    const {getByTestId} = render(<LinkGenerator link="dummy.com" />);
     fireEvent.click(getByTestId('copy-button'));
     const elem = getByTestId('copy-button');
     expect(elem.innerHTML).toBe("Copied!");
