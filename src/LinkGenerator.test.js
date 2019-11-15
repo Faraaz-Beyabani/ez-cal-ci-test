@@ -5,7 +5,7 @@ import {render, fireEvent} from '@testing-library/react'
 
 it('successful render', () => {
     const div = document.createElement('div');
-    const {getByTestId} = render(<LinkGenerator link="dummy.com" />, div);
+    const {getByTestId} = render(<LinkGenerator link="dummy.com" />);
     const elem = getByTestId('link-holder');
     expect(elem.innerHTML).toBe('dummy.com');
     ReactDOM.unmountComponentAtNode(div);
@@ -13,8 +13,8 @@ it('successful render', () => {
 
 it('link clickable', () => {
     const div = document.createElement('div');
-    const {getByText, getByTestId} = render(<LinkGenerator link="dummy.com" />, div);
-    fireEvent.click(getByText('Copy'));
+    const {getByText, getByTestId} = render(<LinkGenerator link="dummy.com" />);
+    fireEvent.click(getByTestId('copy-button'));
     const elem = getByTestId('copy-button');
     expect(elem.innerHTML).toBe("Copied!");
 })
