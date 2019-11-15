@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import LinkGenerator from './LinkGenerator'
-import {render, fireEvent} from 'react-testing-library'
+import {render, fireEvent} from '@testing-library/react'
 
 it('successful render', () => {
     const div = document.createElement('div');
