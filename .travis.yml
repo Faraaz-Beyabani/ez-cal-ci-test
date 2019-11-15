@@ -7,7 +7,3 @@ cache:
 script:
   - npm test
   - npm run build
-deploy:
-  provider: firebase
-  token:
-    secure: 1//0fUzV6vhpkaNFCgYIARAAGA8SNwF-L9Ir9OwqXYsOo1z9Ot_OwDAAUVHyv_3aBRdDXRhdugReIl44b1Zbvk6X6PJ5ZDtD7np8F7k

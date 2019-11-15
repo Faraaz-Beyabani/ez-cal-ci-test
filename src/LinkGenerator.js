@@ -56,8 +56,8 @@ export default class LinkGenerator extends Component {
             <div className="modalContainer">
                 <div className="closeButtonWrapper">
                   <button onClick={this.close} className="closeButton"/>
-                  <div>{this.props.link}</div>
-                  <button onClick={this.copyCode} className="copyButton">{this.state.copied}</button>
+                  <div data-testid="link-holder">{this.props.link}</div>
+                  <button onClick={this.copyCode} className="copyButton" data-testid="copy-button">{this.state.copied}</button>
                 </div>
             </div>
           </div> 
