@@ -41,7 +41,7 @@ const Addevents = () =>{
   };
     
     return (
-        <Popup trigger={open => (<Button >{open ? "" : ""}</Button>)} modal>
+        <Popup trigger={open => (<Button data-cy="addButton">{open ? "" : ""}</Button>)} modal>
                   {close => (
 <form>
 <Field kind="addons" align="right">
@@ -79,16 +79,10 @@ const Addevents = () =>{
       <Field>
         <Control expanded>
           
-        <TextField
+        <div
+        data-cy="startTime"
         id="datetime-local"
-        type="datetime-local"
-        value={values.starttime}
-        onChange={handleChange('starttime')}
-
-        className={classes.textField}
-        InputLabelProps={{
-          shrink: true,
-        }}
+        >{values.starttime}</div>
       />
 
         </Control>

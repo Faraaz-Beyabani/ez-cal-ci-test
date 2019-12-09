@@ -16,12 +16,12 @@ export default class LinkGenerator extends Component {
   }
 
   copyCode = () => {
-      const x = document.createElement('textarea');
-      x.value = this.props.link
-      document.body.appendChild(x);
-      x.select();
-      document.execCommand('copy');
-      document.body.removeChild(x);
+      // const x = document.createElement('textarea');
+      // x.value = this.props.link
+      // document.body.appendChild(x);
+      // x.select();
+      // document.execCommand('copy');
+      // document.body.removeChild(x);
       this.setState({
         copied: 'Copied!'
       })
