@@ -9,10 +9,6 @@ const Config = require("./data/apiGoogleconfig.json");
 
 export default class ApiCalendar extends Component  {
 
-    static propTypes = {
-        uid: null,
-        name: null
-    }
     constructor(props) {
         super(props);
         this.state = {

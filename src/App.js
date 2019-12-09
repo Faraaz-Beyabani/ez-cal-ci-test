@@ -82,10 +82,7 @@ export default class App extends Component {
 
   Main = () => {
     return (
-      <Switch>
-        <Route exact path='/' component={this.MyCalendar} />
-        <Route path={window.location.pathname} component={this.SharedCalendar} />
-      </Switch>
+      <this.MyCalendar></this.MyCalendar>
     );
   };
 
