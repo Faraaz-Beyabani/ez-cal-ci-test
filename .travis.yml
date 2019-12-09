@@ -1,9 +1,14 @@
 language: node_js
 node_js:
-  - "node"
+  - "stable"
+addons:
+  apt:
+    packages:
+      - libgconf-2-4
 cache:
   directories:
   - node_modules
+  - ~/.cache
 script:
-  - npm test
+  - npm run test:ci
   - npm run build
