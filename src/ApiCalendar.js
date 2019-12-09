@@ -49,7 +49,7 @@ export default class ApiCalendar extends Component  {
 
     handleData = (snap) => {
         if (snap.val()) {
-          this.setBusy2(Object.values(snap.val()));
+        //   this.setBusy2(Object.values(snap.val()));
         }
     };
     /**
@@ -73,7 +73,7 @@ export default class ApiCalendar extends Component  {
             })
              db.child(this.getUserID()).child('events').set(googleEvents);
              db.child(this.getUserID()).child('userName').set(this.getUserName());
-              this.setBusy(googleEvents);
+            //   this.setBusy(googleEvents);
             });
       };
     

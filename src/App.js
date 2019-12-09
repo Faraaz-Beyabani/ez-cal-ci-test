@@ -29,7 +29,7 @@ export default class App extends Component {
   dayGrid = () => {
     let [days, dates] = this.buildDayList();
     let timeBlock = subTimes.map(x => {
-      return x.split(":")[1] === "00" ? <div className="dayTime">{x}</div> : <div className="dayTime"></div>;
+      return x.split(":")[1] === "00" ? <div data-cy="time" className="dayTime">{x}</div> : <div className="dayTime"></div>;
     });
 
     let cal = [];
